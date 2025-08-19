@@ -5,8 +5,8 @@ sgMail.setApiKey('SG.Cp3i9119R422Gk7zLcViFA.6g18GAsWSgBUU6mBRsO1pfQbIdE2y_EglVfg
 
 class EmailService {
   constructor() {
-    // Use environment variable for API URL, fallback to localhost for development
-    this.apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api';
+    // Use environment variable for API URL, fallback to Railway production URL
+    this.apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://investmentweb-production.up.railway.app/api';
   }
 
   async sendWelcomeEmail(email, name) {
