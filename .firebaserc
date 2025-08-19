@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "investment-tracker-new"
-  }
+  },
+  "targets": {
+    "investment-tracker-new": {
+      "hosting": {
+        "main": [
+          "investment-tracker-new"
+        ],
+        "opessocius": [
+          "opessocius-co"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
